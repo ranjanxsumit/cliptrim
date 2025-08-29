@@ -16,7 +16,7 @@ function UploadForm({ setFileName, setMessage, setPreviewUrl }) {
     formData.append('video', file);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/upload', formData, {
+      const res = await axios.post('https://cliptrim.onrender.com/api/upload', formData, {
         responseType: 'blob',
       });
 
